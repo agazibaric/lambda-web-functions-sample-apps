@@ -1,5 +1,5 @@
 // Classic Lambda entry: the same Hono app behind a Lambda Function URL.
-// Built by `./build.sh lambda` into dist-lambda/index.mjs (handler: index.handler).
+// Built by `./build.sh hono-lambda` into hono/dist-lambda/index.mjs (handler: index.handler).
 import { handle } from 'hono/aws-lambda';
 import { FW, app } from './app.js';
 import { markImported, markListening } from './common.js';

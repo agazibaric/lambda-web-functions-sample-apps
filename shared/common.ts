@@ -1,4 +1,6 @@
-// Payload, CPU work and instrumentation headers used by the routes in app.ts.
+// Shared instrumentation for the Hono, Express and Fastify apps: payload, CPU work and headers.
+// build.sh copies this file into each app's src/ before compiling, so all three apps report
+// exactly the same headers and timings.
 import { createHash, randomUUID } from 'node:crypto';
 import { performance } from 'node:perf_hooks';
 

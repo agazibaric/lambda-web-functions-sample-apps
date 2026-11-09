@@ -1,4 +1,6 @@
-// Web Function bundle: src/index.ts -> dist/index.js, one minified ESM file, no node_modules.
+// Web Function bundle, shared by the three apps. build.sh runs it from each app's directory,
+// so paths resolve against that app: src/index.ts -> dist/index.js, one minified ESM file,
+// no node_modules. No import from 'rolldown' here: each app's own rolldown CLI loads this file.
 export default {
   input: 'src/index.ts',
   platform: 'node',
